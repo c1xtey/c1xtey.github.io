@@ -23,16 +23,18 @@
       margin: 20px 0;
     }
 
-    .image-placeholder {
-      width: 100%;
-      height: 300px;
-      background-color: #eee;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #888;
-      font-size: 1.2em;
+    /* Image styling */
+    .image-container {
+      text-align: center;
       margin-bottom: 20px;
+    }
+
+    .image-container img {
+      width: 200px;      /* Adjust this size if you want smaller/larger */
+      max-width: 100%;   /* Makes it responsive on phones */
+      height: auto;      /* Keeps proportions */
+      display: block;
+      margin: 0 auto;
     }
 
     h2 {
@@ -66,9 +68,10 @@
   <hr>
 
   <div class="image-container">
-  <img src="myimage .JPG" alt="Lagos, Portugal.">
-</div>
-<hr>
+    <img src="myimage .JPG" alt="Lagos, Portugal.">
+  </div>
+
+  <hr>
 
   <h2>Mathematics Notes</h2>
   <ul>
