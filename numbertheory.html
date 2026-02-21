@@ -23,6 +23,23 @@
       margin: 20px 0;
     }
 
+    /* Back button styling */
+    .back-button {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 6px 12px;
+      background-color: #eee;
+      border-radius: 4px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .back-button:hover {
+      background-color: #ddd;
+      color: #0056b3;
+    }
+
     /* Grid container */
     .grid {
       display: grid;
@@ -60,7 +77,6 @@
       height: 100%;
       text-decoration: none;
       color: #000;
-      /* NO padding here → true centering */
     }
 
     .grid-item a:hover {
@@ -69,6 +85,9 @@
   </style>
 </head>
 <body>
+
+  <!-- Back button -->
+  <a href="javascript:history.back()" class="back-button">&#8592; Back</a>
 
   <h1>Number Theory</h1>
   <hr>
