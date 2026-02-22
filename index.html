@@ -30,11 +30,18 @@
     }
 
     .image-container img {
-      width: 400px;      /* Adjust this size if you want smaller/larger */
-      max-width: 100%;   /* Makes it responsive on phones */
-      height: auto;      /* Keeps proportions */
+      width: 400px;
+      max-width: 100%;
+      height: auto;
       display: block;
       margin: 0 auto;
+    }
+
+    /* Caption styling */
+    figcaption {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 8px;
     }
 
     h2 {
@@ -67,9 +74,10 @@
   <h1>Ben Mackay</h1>
   <hr>
 
-  <div class="image-container">
+  <figure class="image-container">
     <img src="myimage.JPG" alt="Lagos, Portugal.">
-  </div>
+    <figcaption>Lagos, Portugal.</figcaption>
+  </figure>
 
   <hr>
 
