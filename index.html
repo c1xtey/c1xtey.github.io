@@ -50,13 +50,16 @@
       padding-bottom: 5px;
     }
 
-    ul {
-      list-style: none;
+    /* Links styling */
+    ul.notes-links {
+      list-style: none;      /* remove bullets */
       padding-left: 0;
+      display: flex;         /* horizontal layout */
+      gap: 20px;             /* space between links */
     }
 
-    ul li {
-      margin: 10px 0;
+    ul.notes-links li {
+      margin: 0;             /* remove vertical spacing */
     }
 
     a {
@@ -82,9 +85,10 @@
   <hr>
 
   <h2>Mathematics Notes</h2>
-<ul>
-  <li><a href="numbertheory.html">Number Theory</a></li>
-  <li><a href="categorytheory.html">Category Theory</a></li>
-</ul>
+  <ul class="notes-links">
+    <li><a href="numbertheory.html">Number Theory</a></li>
+    <li><a href="categorytheory.html">Category Theory</a></li>
+  </ul>
+
 </body>
 </html>
